@@ -55,7 +55,7 @@ TopNet comprising of edges from highly up-regulated and statistically significan
 Tab-delimited file with details of paths considered in TopNet creation (after applying path length and percentile thresholds). This file shows the z-score of the actual path cost vs randomized path costs, as well as the FDR-corrected q-score for each such path.
 
 Example: <br />
-$ bash get_Activated_Response_TopNet.sh test_data/GSE71200_SI.txt GSM1829740 GSM1829696 test_data/small_Mtb_network.txt 0.5 2 0.05 1000 test_data/results/ Activated_Response_base_network.txt Activated_Response_TopNet.txt
+$ bash get_Activated_Response_TopNet.sh test_data/GSE71200_SI.txt GSM1829740 GSM1829696 test_data/small_Mtb_network.txt 0.5 2 0.05 100 test_data/results/ Activated_Response_base_network.txt Activated_Response_TopNet.txt
 
 The example input omics data, test_data/GSE71200_SI.txt, is taken from GEO accession number GSE71200 [1]. It contains transcriptomic data for mycobacterium tuberculosis (M.tb) exposed for 16 hours to various concentrations of antibiotics.
 GSM1829740 corresponds to M.tb exposed to twice the minimum inhibitory concentration of isoniazid. <br />
@@ -79,7 +79,7 @@ argv[10] = file name for base response network (we'll put it in the output direc
 argv[11] = file name for TopNet (we'll put it in the output directory) <br />
 
 Example: <br />
-$ bash get_Repressed_Response_TopNet.sh test_data/GSE71200_SI.txt GSM1829740 GSM1829696 test_data/small_Mtb_network.txt 0.5 2 0.05 1000 test_data/results/ Repressed_Response_base_network.txt Repressed_Response_TopNet.txt
+$ bash get_Repressed_Response_TopNet.sh test_data/GSE71200_SI.txt GSM1829740 GSM1829696 test_data/small_Mtb_network.txt 0.5 2 0.05 100 test_data/results/ Repressed_Response_base_network.txt Repressed_Response_TopNet.txt
 
 
 
