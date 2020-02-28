@@ -150,6 +150,17 @@ def get_sp_costs(G):
 	return sp_costs_df
 
 
+# return only shortest paths involving at least one node of interest
+def get_sp_paths_costs_nodes(G, noi):
+        spaths_dict = nx.all_pairs_dijkstra_path(G)
+
+        # Convert to a pandas dataframe
+        # Index will be the full path, with nodes separated by #
+        # The column value will be the cost of that path
+        spaths_costs_df = pd.DataFrame.from_dict({'#'.join(spaths_dict[i][j]): get_path_cost(G, spaths_dict[i][j]) for i in spaths_dict.keys() for j in spaths_dict[i].keys() if ((i!=j) and (set(spaths_dict[i][j]) & noi))}, orient='index')
+
+        return spaths_costs_df
+
 def get_all_sp_paths_costs(G):
 	spaths_dict = nx.all_pairs_dijkstra_path(G)
 

@@ -98,17 +98,3 @@ with open(ha_topnet_fname, 'w') as outfile:
 		outfile.write( edge[1] + "\t" )
 		outfile.write( str(edge[2]) + "\n" )
 print("Done writing TopNet")
-
-'''
-# Randomized data
-for i in range(num_trials):
-	print("######################## Trial ", i, " ########################")
-
-	randomized_SI = mic_fun.get_randomized_single_sample_mult_pert(SI)
-	print("After shuffling, got SI values for ", randomized_SI.shape[0], " genes and ", randomized_SI.shape[1], " samples")
-
-	# Give shortest paths in actual dataset as the paths argument
-	Pij, randomized_SI = combine_data_get_sp_paths_costs_activated(G_unweighted, randomized_SI, response_nw_fname, list(Pij.index))
-
-	Pij.to_csv(output_fname_prefix+"_"+str(i)+".txt", sep = "\t")
-'''
