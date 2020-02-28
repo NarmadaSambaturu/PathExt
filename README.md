@@ -85,7 +85,7 @@ $ bash get_Repressed_Response_TopNet.sh test_data/GSE71200_SI.txt GSM1829740 GSM
 
 #### Response TopNet - union of Activated and Repressed Response TopNets, provides a holistic view of the active, altered genes and processes. <br />
 
-$ python get_union_Response_TopNet.py <br />
+$ python get_union_response_TopNet.py <br />
 argv[1] = activated response TopNet (weighted) <br />
 argv[2] = repressed respone TopNet (weighted) <br />
 argv[3] = output file for union response TopNet (unweighted) <br />
