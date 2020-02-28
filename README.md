@@ -102,7 +102,7 @@ $ python get_union_response_TopNet.py test_data/results/Activated_Response_TopNe
 
 #### Highest Activity TopNet (HA TopNet) - captures highly active processes in the condition of interest
 
-$ python get_Highest_Activity_TopNet.py <br />
+$ python get_highest_activity_TopNet.py <br />
 argv[1] = microarray data file (tab-delimited, with header) <br />
 argv[2] = name of sample to study <br />
 argv[3] = unweighted (directed) network file <br />
