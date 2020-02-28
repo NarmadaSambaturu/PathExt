@@ -9,7 +9,7 @@ Executing a command without any arguments will generate a list of required input
 
 # Comparing two conditions
 
-# Activated Response TopNet - captures up-regulated genes and processes
+Activated Response TopNet - captures up-regulated genes and processes
 $ bash get_Activated_Response_TopNet.sh
 argv[1] = microarray data file
 argv[2] = name of perturbation sample to study
@@ -62,7 +62,7 @@ The example input knowledge-based network, test_data/small_Mtb_network.txt, is a
 
 
 
-# Repressed Response TopNet - captures down-regulated genes and processes
+Repressed Response TopNet - captures down-regulated genes and processes
 $ bash get_Repressed_Response_TopNet.sh
 argv[1] = microarray data file
 argv[2] = name of perturbation sample to study
@@ -81,7 +81,7 @@ $ bash get_Repressed_Response_TopNet.sh test_data/GSE71200_SI.txt GSM1829740 GSM
 
 
 
-# Response TopNet - union of Activated and Repressed Response TopNets, provides a holistic view of the active, altered genes and processes.
+Response TopNet - union of Activated and Repressed Response TopNets, provides a holistic view of the active, altered genes and processes.
 $ python get_union_Response_TopNet.py
 argv[1] = activated response TopNet (weighted)
 argv[2] = repressed respone TopNet (weighted)
@@ -97,7 +97,7 @@ $ python get_union_Response_TopNet.py test_data/results/Activated_Response_TopNe
 
 # Studying a single condition, or working in the absence of an appropriate control
 
-# Highest Activity TopNet (HA TopNet) - captures highly active processes in the condition of interest
+Highest Activity TopNet (HA TopNet) - captures highly active processes in the condition of interest
 $ python get_Highest_Activity_TopNet.py
 argv[1] = microarray data file (tab-delimited, with header)
 argv[2] = name of sample to study
