@@ -91,7 +91,7 @@ argv[2] = repressed respone TopNet (weighted) <br />
 argv[3] = output file for union response TopNet (unweighted) <br />
 
 Example: <br />
-$ python get_union_Response_TopNet.py test_data/results/Activated_Response_TopNet.txt test_data/results/Repressed_Response_TopNet.txt test_data/results/Response_TopNet.txt
+$ python get_union_response_TopNet.py test_data/results/Activated_Response_TopNet.txt test_data/results/Repressed_Response_TopNet.txt test_data/results/Response_TopNet.txt
 
 
 
@@ -111,8 +111,8 @@ argv[5] = path length threshold <br />
 argv[6] = output file for highest activity base network <br />
 argv[7] = output file for HA TopNet <br />
 
-Example:
-$ python get_Highest_Activity_TopNet.py test_data/GSE71200_SI.txt GSM1829740 test_data/small_Mtb_network.txt 0.5 2 test_data/results/HA_base_network.txt test_data/results/HA_TopNet.txt
+Example: <br />
+$ python get_highest_activity_TopNet.py test_data/GSE71200_SI.txt GSM1829740 test_data/small_Mtb_network.txt 0.5 2 test_data/results/HA_base_network.txt test_data/results/HA_TopNet.txt
 
 
 
