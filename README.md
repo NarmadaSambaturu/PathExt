@@ -26,7 +26,7 @@ argv[11] = file name for TopNet (we'll put it in the output directory) <br />
 
 Inputs:
 1. microarray data file <br />
-Tab-delimited file of normalized signal intensities. Each column can correspond to a different condition (eg: individual patient samples), or a summarised value (eg: median expression across a cohort). 
+Tab-delimited file of normalized signal intensities, with header. Each column can correspond to a different condition (eg: individual patient samples), or a summarised value (eg: median expression across a cohort). 
 
 2. name of perturbation sample to study <br />
 3. name of control sample <br />
@@ -115,6 +115,17 @@ Example: <br />
 $ python get_highest_activity_TopNet.py test_data/GSE71200_SI.txt GSM1829740 test_data/small_Mtb_network.txt 0.5 2 test_data/results/HA_base_network.txt test_data/results/HA_TopNet.txt
 
 
+
+***************************************************************************************
+
+Tools and packages used
+Python 3.6.9
+Pandas 0.25.3
+Networkx 1.11
+Numpy 1.17.4
+Random
+Sys
+Math
 
 ***************************************************************************************
 
