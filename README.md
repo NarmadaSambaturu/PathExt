@@ -118,7 +118,7 @@ $ python get_highest_activity_TopNet.py test_data/GSE71200_SI.txt GSM1829740 tes
 
 ***************************************************************************************
 
-Tools and packages used: <br />
+### Tools and packages used: <br />
 Python 3.6.9 <br />
 Pandas 0.25.3 <br />
 Networkx 1.11 <br />
